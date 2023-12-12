@@ -6,7 +6,7 @@ from pyDecision.algorithm import moora_method
 st.write('Hasil Perangkingan dengan Metode MOORA')
 
 # Input jumlah bobot
-num_weights = st.number_input('Masukkan Jumlah Bobot', min_value=1, max_value=10, value=5, step=1)
+num_weights = 5
 
 # Masukkan bobot
 weights = []
