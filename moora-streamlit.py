@@ -11,9 +11,9 @@ num_weights = 5
 # Masukkan bobot
 weights = []
 kriteria = ['RAM','HDD','HARGA','BERAT','PROSESOR']
-st.write('Masukkan Bobots:')
+st.write('Masukkan Bobot:')
 for i in range(num_weights):
-    weight = st.number_input(f'Bobot {kriteria[i+1]}', value=0.0, step=0.01)
+    weight = st.number_input(f'Bobot {kriteria[i]}', value=0.0, step=0.01)
     weights.append(weight)
 
 # Load Criterion Type: 'max' or 'min'
