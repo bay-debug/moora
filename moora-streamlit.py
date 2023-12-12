@@ -10,7 +10,7 @@ num_weights = 5
 
 # Masukkan bobot
 weights = []
-kriteria = ['RAM','HDD','HARGA','BERAT','PROSESOR']
+kriteria = ['HARGA','RAM','MEMORI','BERAT','KEUNIKAN']
 st.write('Masukkan Bobot:')
 for i in range(num_weights):
     weight = st.number_input(f'Bobot {kriteria[i]}', value=0.0, step=0.01)
@@ -40,7 +40,7 @@ for _ in range(len(alternative_labels)):
     st.subheader(f'Masukkan atribut untuk Alternatif {alternative_labels[_]}')
     attributes = []
     for i in range(num_weights):
-        attribute = st.number_input(f'Atribut {i+1} untuk {alternative_labels[_]}', value=0, step=10)
+        attribute = st.number_input(f'{kriteria[i]} untuk {alternative_labels[_]}', value=0, step=10)
         attributes.append(attribute)
     dataset.append(attributes)
 
