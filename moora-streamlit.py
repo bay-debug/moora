@@ -3,7 +3,7 @@ import numpy as np
 
 from pyDecision.algorithm import moora_method
 
-st.write('Hasil Perangkingan dengan Metode MOORA')
+st.write('Perhitungan dengan Metode MOORA')
 
 # Input jumlah bobot
 num_weights = 5
