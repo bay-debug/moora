@@ -10,7 +10,7 @@ num_weights = 5
 
 # Masukkan bobot
 weights = []
-kriteria = ['NILAI HARGA','NILAI RAM','NILAI MEMORI','NILAI BERAT','NILAI KEUNIKAN']
+kriteria = ['NILAI HARGA','NILAI RAM','NILAI MEMORI','NILAI BERAT','NILAI FITUR']
 st.write('Masukkan Bobot:')
 for i in range(num_weights):
     weight = st.number_input(f'Bobot {kriteria[i]}', value=0.0, step=0.01)
